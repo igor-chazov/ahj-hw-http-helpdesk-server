@@ -1,0 +1,23 @@
+{
+  "name": "http-helpdesk-server",
+  "version": "1.0.0",
+  "description": "HTTP Helpdesk server project",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": "https://github.com/igor-chazov/ahj-hw-http-helpdesk-server",
+  "author": "Igor Chazov <igor-chazov@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^4.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "uuid": "^8.3.2"
+  }
+}
